@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form controllo utenti</title>
+</head>
+
+<body>
+
+<form autocomplete="off">
+
+    <fieldset>
+        <legend>Dettagli:</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Nome:</label>
+                </td>
+                <td>
+                    <input type="text" name="nome" id="nome" autofocus required size="50">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cognome">Cognome:</label>
+                </td>
+                <td>
+                    <input type="text" name="cognome" id="cognome" autofocus required size="50">
+                </td>
+            </tr>  
+            <tr>
+                <td>
+                    <label for="pwd">Password:</label>
+                </td>
+                <td>
+                    <input type="password" name="password" id="pwd" autofocus required size="50">
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <label for="Data">Data di nascita:</label>
+                </td>
+                <td>
+                    <input type="date" name="data" id="data">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sesso:
+                </td>
+                <td>
+                    <input type="radio" name="sesso" id="maschio" value="maschio">
+                    <label for="maschio">Maschio:</label>
+                    <input type="radio" name="femmina" id="femmina" value="femmina">
+                    <label for="femmina">Femmina:</label>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="mail" id="mail" multiple required size="50" placeholder="Ad esempio: email@outlook.it">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="i_web">Indirizzo Web:</label>
+                </td>
+                <td>
+                    <input type="url" name="i_web" id="i_web" size="50" placeholder="https://www.google.it">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Materie preferite:
+                </td>
+                <td>
+                    <input type="checkbox" name="storia" id="storia" value="STO">
+                    <label for="storia">Storia</label>
+                    <input type="checkbox" name="matematica" id="matematica" value="MAT">
+                    <label for="storia">Matematica</label>
+                    <input type="checkbox" name="geografia" id="geografia" value="GEO">
+                    <label for="storia">Geografia</label>
+                    <input type="checkbox" name="fisica" id="fisica" value="FIS">
+                    <label for="storia">Fisica</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <label for="nr_libri">Quanti libri leggi all'anno?</label>
+                </td>
+                <td>
+                    <input type="number" name="nr_libri" id="nr_libri" value="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tm_libri">Ogni quanti mesi compri un libro?</label>
+                </td>
+                <td>
+                    <input type="range" name="tm_libri" id="tm_libri" min="1" step="1" max="12" value="1">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="colore">Il tuo colore preferito?</label>
+                </td>
+                <td>
+                    <input type="color" name="colore" id="colore">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Seleziona un sistema operativo:
+                </td>
+                <td>
+                    <select name="so" id="so">
+                        
+                        <optgroup label="Famiglia BSD">
+                            <option value="fbsd">FreeBSD</option>
+                            <option value="obsd">OpenBSD</option>
+                            <option value="nbsd">Net BSD</option>
+                        </optgroup>
+                        <optgroup label="Famiglia Windows">
+                            <option value="windows_11">Windows 11</option>
+                            <option value="windows_10">Windows 10</option>
+                            <option value="windows_8">Windows 8</option>
+                            <option value="windows_7">Windows 7</option>
+                            <option value="windows_xp">Windows XP</option>
+                        </optgroup>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lp">Scegli un linguaggio di programmazione:</label>
+                </td>
+                <td>
+                    <datalist id="lp_datasourche">
+                        <option value="Java"></option>
+                        <option value="C#"></option>
+                        <option value="C++"></option>
+                        <option value="PHP"></option>
+                        <option value="JavaScript"></option>
+                        <option value="Python"></option>
+                    </datalist>
+                    <input type="text" name="lp" id="lp" list="lp_datasourche">
+                </td>
+            </tr>  
+            <tr>
+                <td>
+                    <label for="note">Note:</label>
+                </td>
+                <td>
+                    <textarea name="note" id="note" cols="30" rows="10" maxlength="200" wrap="soft" spellcheck="true"></textarea>
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    &nbsp
+                </td>
+                <td>
+                    <button type="submit" id="ok">
+                        Salva i dati <img src="./download.jpg" alt="" width="16">
+                    </button>
+                    <button type="reset" id="reset">
+                        Ripristina <img src="./refri.jpg" alt="" width="16">
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
